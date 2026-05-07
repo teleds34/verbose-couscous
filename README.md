@@ -1,2 +1,2 @@
 # verbose-couscous
-If your name is Gillian open this ( and you go to ejm )
+never mind this os for my mom ( bridget ) 
