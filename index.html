@@ -36,15 +36,25 @@
             cursor: pointer;
             font-size: 1rem;
             font-weight: bold;
+            margin: 5px;
         }
-        #secret-message {
+        .also-btn {
+            background-color: #2ed573;
+            display: none;
+        }
+        #secret-message, #minecraft-text {
             display: none;
             margin-top: 25px;
             padding-top: 20px;
             border-top: 1px solid #eee;
             color: #555;
-            font-style: italic;
             line-height: 1.5;
+        }
+        #minecraft-text {
+            border-top: none;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #2f3542;
         }
     </style>
 </head>
@@ -55,16 +65,28 @@
             Yh so basically I realized you fall under peer pressure and stuff and honestly I’m not to sure If I like you either wanna find out my new crush click the button .
         </p>
         
-        <button onclick="showText()">Click to find out</button>
+        <button id="first-btn" onclick="showText()">Click to find out</button>
+        <button id="also-btn" class="also-btn" onclick="showMinecraft()">Also...</button>
 
         <p id="secret-message">
             I don’t have a new crush yet or maybe I do or maybe it’s not new or maybe you shouldn’t rely on me for your gossip go talk to your other friends best of luck Simon ps if your name isn’t Gillian then don’t worry about this I’m not sure how to keep the private link for someone without letting be open
+        </p>
+
+        <p id="minecraft-text">
+            but i still really want to play mincraft so if you want to play im free later plus i still really hope we can still be friends
         </p>
     </div>
 
     <script>
         function showText() {
             document.getElementById('secret-message').style.display = 'block';
+            document.getElementById('first-btn').style.display = 'none';
+            document.getElementById('also-btn').style.display = 'inline-block';
+        }
+
+        function showMinecraft() {
+            document.getElementById('minecraft-text').style.display = 'block';
+            document.getElementById('also-btn').style.display = 'none';
         }
     </script>
 
