@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fafafa;
+        }
+        .box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            max-width: 400px;
+            text-align: center;
+        }
+        .main-text {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        button {
+            background-color: #ff4757;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        #secret-message {
+            display: none;
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #555;
+            font-style: italic;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <p class="main-text">
+            Yh so basically I realized you fall under peer pressure and stuff and honestly I’m not to sure If I like you either wanna find out my new crush click the button .
+        </p>
+        
+        <button onclick="showText()">Click to find out</button>
+
+        <p id="secret-message">
+            I don’t have a new crush yet or maybe I do or maybe it’s not new or maybe you shouldn’t rely on me for your gossip go talk to your other friends best of luck Simon ps if your name isn’t Gillian then don’t worry about this I’m not sure how to keep the private link for someone without letting be open
+        </p>
+    </div>
+
+    <script>
+        function showText() {
+            document.getElementById('secret-message').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
